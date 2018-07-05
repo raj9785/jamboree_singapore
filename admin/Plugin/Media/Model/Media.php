@@ -1,0 +1,1 @@
+<?phpclass Media extends MediaAppModel {    var $name = 'Medias';    var $actsAs = array('Search.Searchable');    public $validate = array();    public $belongsTo = array(        'MediaType' => array("fields" => array("name", "id"))    );}?>

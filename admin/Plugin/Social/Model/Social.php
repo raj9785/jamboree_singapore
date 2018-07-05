@@ -1,0 +1,1 @@
+<?phpclass Social extends SocialAppModel {    var $name = 'Social';    var $actsAs = array('Search.Searchable');    }?>

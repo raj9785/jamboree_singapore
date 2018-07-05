@@ -1,0 +1,1 @@
+<?phpclass HomeStatistic extends HomeStatisticAppModel {    var $name = 'HomeStatistic';    var $actsAs = array('Search.Searchable');    }?>

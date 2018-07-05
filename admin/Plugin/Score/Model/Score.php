@@ -1,0 +1,1 @@
+<?phpclass Score extends ScoreAppModel {    var $name = 'Score';    var $actsAs = array('Search.Searchable');    public $validate = array();    public $belongsTo = array(        'Course' => array("fields" => array("name", "id"))    );}?>

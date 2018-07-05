@@ -1,0 +1,1 @@
+<?phpclass Career extends CareerAppModel {    var $name = 'Career';    var $actsAs = array('Search.Searchable');    public $belongsTo = array(        'CareerCategory' => array("fields" => array("name", "id"))    );}?>

@@ -1,0 +1,1 @@
+<?phpclass Event extends EventAppModel {    var $name = 'Event';    var $actsAs = array('Search.Searchable');    public $hasMany = array(        'EventImage'    );}?>

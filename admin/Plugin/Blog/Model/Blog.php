@@ -1,0 +1,1 @@
+<?phpclass Blog extends BlogAppModel {    var $name = 'Blog';    var $actsAs = array('Search.Searchable');    public $belongsTo = array(           );}?>

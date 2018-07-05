@@ -1,0 +1,1 @@
+<?phpclass Banner extends BannerAppModel {    var $name = 'Banner';    var $actsAs = array('Search.Searchable');    public $belongsTo = array(           );}?>

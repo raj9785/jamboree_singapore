@@ -1,0 +1,1 @@
+<?phpclass Video extends VideoAppModel {    var $name = 'Video';    var $actsAs = array('Search.Searchable');    public $validate = array();    public $belongsTo = array(        'Course' => array("fields" => array("name", "id"))    );}?>

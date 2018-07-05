@@ -1,0 +1,1 @@
+<?phpclass AdmissionCounsellingResult extends AdmissionCounsellingResultAppModel {    var $name = 'AdmissionCounsellingResult';    var $actsAs = array('Search.Searchable');    public $validate = array();    public $belongsTo = array(        'AdmissionCounsellingCourse' => array("fields" => array("name", "id"))    );}?>

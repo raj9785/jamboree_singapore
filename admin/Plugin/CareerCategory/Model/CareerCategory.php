@@ -1,0 +1,1 @@
+<?phpclass CareerCategory extends CareerCategoryAppModel {    var $name = 'CareerCategory';    var $actsAs = array('Search.Searchable');    public $validate = array();}?>

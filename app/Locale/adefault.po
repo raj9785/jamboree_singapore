@@ -1,0 +1,1536 @@
+msgid "Please enter first name."
+msgstr "Please enter first name."
+
+msgid "Please enter last name."
+msgstr "Please enter last name."
+
+msgid "Please enter user name."
+msgstr "Please enter user name."
+
+msgid "Quotation"
+msgstr "Quotation"
+
+msgid "Did you really think you are allowed to see that?"
+msgstr "Did you really think you are allowed to see that?"
+
+msgid "<b>404 File not found!</b>"
+msgstr "<b>404 File not found!</b>"
+
+msgid "Thank you for contacting us. We will get back to you soon."
+msgstr "Thank you for contacting us. We will get back to you soon."
+
+msgid "Your 30 days time period has been expired. Please payment to continue."
+msgstr "Your 30 days time period has been expired. Please payment to continue."
+
+msgid "This tracking number is not valid."
+msgstr "This tracking number is not valid."
+
+msgid "You have been registered successfully and verification mail is sent to your email id."
+msgstr "You have been registered successfully and verification mail is sent to your email id."
+
+msgid "There are some error. Please try again."
+msgstr "There are some error. Please try again."
+
+msgid "Your account is already verified. Please login to access to your account."
+msgstr "Your account is already verified. Please login to access to your account."
+
+msgid "You have successfully verified. Please login to continue"
+msgstr "You have successfully verified. Please login to continue"
+
+msgid "Sorry, you are using wrong link"
+msgstr "Sorry, you are using wrong link"
+
+msgid "%s You have successfully logged in"
+msgstr "%s You have successfully logged in"
+
+msgid "Invalid e-mail / password combination. Please try again"
+msgstr "Invalid e-mail / password combination. Please try again"
+
+msgid "%s you have successfully logged out"
+msgstr "%s you have successfully logged out"
+
+msgid "A reset password link has been sent to your email. Please check your email."
+msgstr "A reset password link has been sent to your email. Please check your email."
+
+msgid "email"
+msgstr "email"
+
+msgid "This email is not registered with cargo"
+msgstr "This email is not registered with cargo"
+
+msgid "Your password has been reset successfully. Please login to access your account."
+msgstr "Your password has been reset successfully. Please login to access your account."
+
+msgid "You need to login first ."
+msgstr "You need to login first ."
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Quotation No"
+msgstr "Quotation No"
+
+msgid "Quotation Request No"
+msgstr "Quotation Request No"
+
+msgid "Pickup place"
+msgstr "Pickup place"
+
+msgid "Pickup date"
+msgstr "Pickup date"
+
+msgid "Delivery Place"
+msgstr "Delivery Place"
+
+msgid "Delivery Date"
+msgstr "Delivery Date"
+
+msgid "Item"
+msgstr "Item"
+
+msgid "Price ttc"
+msgstr "Price ttc"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Initiated"
+msgstr "Initiated"
+
+msgid "Picked up"
+msgstr "Picked up"
+
+msgid "In Transit"
+msgstr "In Transit"
+
+msgid "Delivered"
+msgstr "Delivered"
+
+msgid "Quotation request has been successfully received. We will get back to you soon."
+msgstr "Quotation request has been successfully received. We will get back to you soon."
+
+msgid "Sorry you are using wrong link."
+msgstr "Sorry you are using wrong link."
+
+msgid "We could not proceed your payment"
+msgstr "We could not proceed your payment"
+
+msgid "Thank you for payment. Your billing details are below."
+msgstr "Thank you for payment. Your billing details are below."
+
+msgid "Error occured during payment."
+msgstr "Error occured during payment."
+
+msgid "Message has been deleted successfully"
+msgstr "Message has been deleted successfully"
+
+msgid "Message has not been deleted."
+msgstr "Message has not been deleted."
+
+msgid "Your message has been sent."
+msgstr "Your message has been sent."
+
+msgid "To complete your order Go Back to ".Configure::read('Site.title"
+msgstr "To complete your order Go Back to ".Configure::read('Site.title"
+
+msgid "To complete your order Go Back to Luxby"
+msgstr "To complete your order Go Back to Luxby"
+
+msgid "Client Area"
+msgstr "Client Area"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "<i class="fa fa-user"></i>'.__('My Profile"
+msgstr "<i class="fa fa-user"></i>'.__('My Profile"
+
+msgid "Navigation"
+msgstr "Navigation"
+
+msgid "Our Services"
+msgstr "Our Services"
+
+msgid "quotation"
+msgstr "quotation"
+
+msgid "Tracking"
+msgstr "Tracking"
+
+msgid "Search"
+msgstr "Search"
+
+msgid "Quick Links"
+msgstr "Quick Links"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "About"
+msgstr "About"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Terms & Conditions"
+msgstr "Terms & Conditions"
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid "Transport Areas"
+msgstr "Transport Areas"
+
+msgid "No Record Found"
+msgstr "No Record Found"
+
+msgid "Contact Us"
+msgstr "Contact Us"
+
+msgid "Newsletter"
+msgstr "Newsletter"
+
+msgid "Email Address"
+msgstr "Email Address"
+
+msgid "Subscribe"
+msgstr "Subscribe"
+
+msgid "Express Quote"
+msgstr "Express Quote"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Departure address"
+msgstr "Departure address"
+
+msgid "Departure Date"
+msgstr "Departure Date"
+
+msgid "Delivery address"
+msgstr "Delivery address"
+
+msgid "cm"
+msgstr "cm"
+
+msgid "Make"
+msgstr "Make"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "Get Quote"
+msgstr "Get Quote"
+
+msgid "Track"
+msgstr "Track"
+
+msgid "Views"
+msgstr "Views"
+
+msgid "Default"
+msgstr "Default"
+
+msgid "We deliver your"
+msgstr "We deliver your"
+
+msgid "No Record Found "
+msgstr "No Record Found "
+
+msgid "Our Strengths"
+msgstr "Our Strengths"
+
+msgid "Testimonials"
+msgstr "Testimonials"
+
+msgid "News & Events "
+msgstr "News & Events "
+
+msgid "Read more"
+msgstr "Read more"
+
+msgid "First"
+msgstr "First"
+
+msgid "&larr; Previous"
+msgstr "&larr; Previous"
+
+msgid "Next &rarr;"
+msgstr "Next &rarr;"
+
+msgid "Last"
+msgstr "Last"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Submit"
+msgstr "Submit"
+
+msgid "Sign up"
+msgstr "Sign up"
+
+msgid "Forgot Password"
+msgstr "Forgot Password"
+
+msgid "Reset Password"
+msgstr "Reset Password"
+
+msgid "Confirm Password"
+msgstr "Confirm Password"
+
+msgid "2013 Hakul"
+msgstr "2013 Hakul"
+
+msgid "All rights reserved"
+msgstr "All rights reserved"
+
+msgid "Overview"
+msgstr "Overview"
+
+msgid "My Account"
+msgstr "My Account"
+
+msgid "Shipments"
+msgstr "Shipments"
+
+msgid "Invoice"
+msgstr "Invoice"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Back"
+msgstr "Back"
+
+msgid "Change Password"
+msgstr "Change Password"
+
+msgid "Save Password"
+msgstr "Save Password"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Readmore"
+msgstr "Readmore"
+
+msgid "Welcome"
+msgstr "Welcome"
+
+msgid "Account information:"
+msgstr "Account information:"
+
+msgid "Company Name"
+msgstr "Company Name"
+
+msgid "Company Address"
+msgstr "Company Address"
+
+msgid "City "
+msgstr "City "
+
+msgid "Zip Code"
+msgstr "Zip Code"
+
+msgid "VAT Number"
+msgstr "VAT Number"
+
+msgid "First Name"
+msgstr "First Name"
+
+msgid "Last Name"
+msgstr "Last Name"
+
+msgid "Phone"
+msgstr "Phone"
+
+msgid "Cell Phone"
+msgstr "Cell Phone"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "My password"
+msgstr "My password"
+
+msgid "Edit Profile"
+msgstr "Edit Profile"
+
+msgid "User Name"
+msgstr "User Name"
+
+msgid "User Email"
+msgstr "User Email"
+
+msgid "City"
+msgstr "City"
+
+msgid "Zipcode"
+msgstr "Zipcode"
+
+msgid "About me"
+msgstr "About me"
+
+msgid "Customer Type"
+msgstr "Customer Type"
+
+msgid "Upload Photo"
+msgstr "Upload Photo"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "Address"
+msgstr "Address"
+
+msgid "fax"
+msgstr "fax"
+
+msgid "Categories"
+msgstr "Categories"
+
+msgid "Mr."
+msgstr "Mr."
+
+msgid "Zip"
+msgstr "Zip"
+
+msgid "About Me"
+msgstr "About Me"
+
+msgid "My Invoice"
+msgstr "My Invoice"
+
+msgid "Transaction ID"
+msgstr "Transaction ID"
+
+msgid "Price"
+msgstr "Price"
+
+msgid "Latest orders"
+msgstr "Latest orders"
+
+msgid "View all"
+msgstr "View all"
+
+msgid "ITEMS"
+msgstr "ITEMS"
+
+msgid "Latest Messages"
+msgstr "Latest Messages"
+
+msgid "Shipment co2"
+msgstr "Shipment co2"
+
+msgid "Inbox"
+msgstr "Inbox"
+
+msgid "Outbox"
+msgstr "Outbox"
+
+msgid "Send Message"
+msgstr "Send Message"
+
+msgid "Subject"
+msgstr "Subject"
+
+msgid "GO"
+msgstr "GO"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Are you sure you want to delete this message?"
+msgstr "Are you sure you want to delete this message?"
+
+msgid "Send"
+msgstr "Send"
+
+msgid "Search by"
+msgstr "Search by"
+
+msgid "Day"
+msgstr "Day"
+
+msgid "Tracking Number"
+msgstr "Tracking Number"
+
+msgid "Quotation Request"
+msgstr "Quotation Request"
+
+msgid "No."
+msgstr "No."
+
+msgid "Request  No."
+msgstr "Request  No."
+
+msgid "Pickup"
+msgstr "Pickup"
+
+msgid "Place"
+msgstr "Place"
+
+msgid "Delivery"
+msgstr "Delivery"
+
+msgid "ttc"
+msgstr "ttc"
+
+msgid "Request a Quote"
+msgstr "Request a Quote"
+
+msgid "Track And Trace"
+msgstr "Track And Trace"
+
+msgid "Basic information"
+msgstr "Basic information"
+
+msgid "Select item type"
+msgstr "Select item type"
+
+msgid "Pickup and delivery information"
+msgstr "Pickup and delivery information"
+
+msgid "SELECT ITEM TYPE"
+msgstr "SELECT ITEM TYPE"
+
+msgid "+Add Item"
+msgstr "+Add Item"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "PICKUP INFORMATIONS"
+msgstr "PICKUP INFORMATIONS"
+
+msgid "Pickup Date"
+msgstr "Pickup Date"
+
+msgid "Type of Pickup address"
+msgstr "Type of Pickup address"
+
+msgid "Pickup  Address"
+msgstr "Pickup  Address"
+
+msgid "Pickup City"
+msgstr "Pickup City"
+
+msgid "Pickup Postal Code"
+msgstr "Pickup Postal Code"
+
+msgid "Pickup Phone"
+msgstr "Pickup Phone"
+
+msgid "DELIVERY INFORMATIONS"
+msgstr "DELIVERY INFORMATIONS"
+
+msgid "Type of Delivery address"
+msgstr "Type of Delivery address"
+
+msgid "Delivery Address"
+msgstr "Delivery Address"
+
+msgid "Delivery City"
+msgstr "Delivery City"
+
+msgid "Delivery Postal Code"
+msgstr "Delivery Postal Code"
+
+msgid "Delivery Phone"
+msgstr "Delivery Phone"
+
+msgid "Phone number"
+msgstr "Phone number"
+
+msgid "At vero eos and accusamus and iusto odio dignissimos Ducimus that blanditiis praesentium atque corrupti quos voluptatum deleniti dolores and quas."
+msgstr "At vero eos and accusamus and iusto odio dignissimos Ducimus that blanditiis praesentium atque corrupti quos voluptatum deleniti dolores and quas."
+
+msgid "Contactez nous"
+msgstr "Contactez nous"
+
+msgid "Horaire d'ouverture:"
+msgstr "Horaire d'ouverture:"
+
+msgid "Du lundi au vendredi de 8h00 à 18h30"
+msgstr "Du lundi au vendredi de 8h00 à 18h30"
+
+msgid "OUR ADVANTAGE"
+msgstr "OUR ADVANTAGE"
+
+msgid "No record found ."
+msgstr "No record found ."
+
+msgid "OUR FLEET FOR DOING THIS SERVICE"
+msgstr "OUR FLEET FOR DOING THIS SERVICE"
+
+msgid "Lorem Ipsum"
+msgstr "Lorem Ipsum"
+
+msgid "INSURZNCE"
+msgstr "INSURZNCE"
+
+msgid "PAYMENT TERMS"
+msgstr "PAYMENT TERMS"
+
+msgid "Individual"
+msgstr "Individual"
+
+msgid "Cash"
+msgstr "Cash"
+
+msgid "Online"
+msgstr "Online"
+
+msgid "Credit card"
+msgstr "Credit card"
+
+msgid "Check"
+msgstr "Check"
+
+msgid "Companies"
+msgstr "Companies"
+
+msgid "Online with paypal"
+msgstr "Online with paypal"
+
+msgid "Bank transfert"
+msgstr "Bank transfert"
+
+msgid "Nos prestations"
+msgstr "Nos prestations"
+
+msgid "Suivi"
+msgstr "Suivi"
+
+msgid "Express Shipment Tracking System"
+msgstr "Express Shipment Tracking System"
+
+msgid "Track result"
+msgstr "Track result"
+
+msgid "Notification"
+msgstr "Notification"
+
+msgid "Tracking No"
+msgstr "Tracking No"
+
+msgid "Time Format"
+msgstr "Time Format"
+
+msgid "send message to the driver"
+msgstr "send message to the driver"
+
+msgid "Your item will be delivred the 12/03/2014 from 17h00 to 18h00"
+msgstr "Your item will be delivred the 12/03/2014 from 17h00 to 18h00"
+
+msgid "Shipment Dates"
+msgstr "Shipment Dates"
+
+msgid "Ship Date"
+msgstr "Ship Date"
+
+msgid "March 21,2013"
+msgstr "March 21,2013"
+
+msgid "March 22,2013 5:30pm"
+msgstr "March 22,2013 5:30pm"
+
+msgid "Destination"
+msgstr "Destination"
+
+msgid "FRANCE UMW 2101AU"
+msgstr "FRANCE UMW 2101AU"
+
+msgid "Proof of Delivery"
+msgstr "Proof of Delivery"
+
+msgid "Help"
+msgstr "Help"
+
+msgid "Shipment Facts"
+msgstr "Shipment Facts"
+
+msgid "Service Type"
+msgstr "Service Type"
+
+msgid "International Priority Service"
+msgstr "International Priority Service"
+
+msgid "Weight"
+msgstr "Weight"
+
+msgid "Delivered to"
+msgstr "Delivered to"
+
+msgid "Receptionist/Front Desk"
+msgstr "Receptionist/Front Desk"
+
+msgid "Shipment Travel History"
+msgstr "Shipment Travel History"
+
+msgid "All Shipment travel activity is displayed in local time for the location"
+msgstr "All Shipment travel activity is displayed in local time for the location"
+
+msgid "date/time"
+msgstr "date/time"
+
+msgid "Activity"
+msgstr "Activity"
+
+msgid "Location"
+msgstr "Location"
+
+msgid "Details"
+msgstr "Details"
+
+msgid "Nov 16, 2014 2:56PM"
+msgstr "Nov 16, 2014 2:56PM"
+
+msgid "On FedEx vehicle for delivery"
+msgstr "On FedEx vehicle for delivery"
+
+msgid "0031 (new york)"
+msgstr "0031 (new york)"
+
+msgid "Pack up 1 item"
+msgstr "Pack up 1 item"
+
+msgid "Loaded 1 item for delivery"
+msgstr "Loaded 1 item for delivery"
+
+msgid " Your Location"
+msgstr " Your Location"
+
+msgid "Delivery  Van"
+msgstr "Delivery  Van"
+
+msgid "Billing Details"
+msgstr "Billing Details"
+
+msgid "Transaction Id"
+msgstr "Transaction Id"
+
+msgid "Payer Id"
+msgstr "Payer Id"
+
+msgid "Receiver Email"
+msgstr "Receiver Email"
+
+msgid "Print Billing Details"
+msgstr "Print Billing Details"
+
+msgid "Pick up Address"
+msgstr "Pick up Address"
+
+msgid "Print Invoice"
+msgstr "Print Invoice"
+
+msgid "Nom prenom"
+msgstr "Nom prenom"
+
+msgid "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas."
+msgstr "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas."
+
+msgid "Select item"
+msgstr "Select item"
+
+msgid "car"
+msgstr "car"
+
+msgid "systems"
+msgstr "systems"
+
+msgid "important equipment"
+msgstr "important equipment"
+
+msgid "mail"
+msgstr "mail"
+
+msgid "Add Item"
+msgstr "Add Item"
+
+msgid "PICKUP AND DELIVERY INFORMATIONS"
+msgstr "PICKUP AND DELIVERY INFORMATIONS"
+
+msgid "Type of address"
+msgstr "Type of address"
+
+msgid "Company"
+msgstr "Company"
+
+msgid "Address1"
+msgstr "Address1"
+
+msgid "Postal Code"
+msgstr "Postal Code"
+
+msgid "Contact us"
+msgstr "Contact us"
+
+msgid "Opening hours:"
+msgstr "Opening hours:"
+
+msgid "Monday to Friday from 8:00 a.m. to 6:30 p.m."
+msgstr "Monday to Friday from 8:00 a.m. to 6:30 p.m."
+
+msgid "Transit"
+msgstr "Transit"
+
+msgid "Your item will be delivered the"
+msgstr "Your item will be delivered the"
+
+msgid "Your Location"
+msgstr "Your Location"
+
+msgid "No Record Found."
+msgstr "No Record Found."
+
+msgid "Shipment Facts Help"
+msgstr "Shipment Facts Help"
+
+msgid "Shipment Travel History Help"
+msgstr "Shipment Travel History Help"
+
+msgid "Shipment"
+msgstr "Shipment"
+
+msgid "Quotation #"
+msgstr "Quotation #"
+
+msgid "Delivered To"
+msgstr "Delivered To"
+
+msgid "Invalid setting for key: Use iso, name, iso3, numcode or printableName."
+msgstr "Invalid setting for key: Use iso, name, iso3, numcode or printableName."
+
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+msgid "Albania"
+msgstr "Albania"
+
+msgid "Algeria"
+msgstr "Algeria"
+
+msgid "American Samoa"
+msgstr "American Samoa"
+
+msgid "Andorra"
+msgstr "Andorra"
+
+msgid "Angola"
+msgstr "Angola"
+
+msgid "Anguilla"
+msgstr "Anguilla"
+
+msgid "Antarctica"
+msgstr "Antarctica"
+
+msgid "Antigua and Barbuda"
+msgstr "Antigua and Barbuda"
+
+msgid "Argentina"
+msgstr "Argentina"
+
+msgid "Armenia"
+msgstr "Armenia"
+
+msgid "Aruba"
+msgstr "Aruba"
+
+msgid "Australia"
+msgstr "Australia"
+
+msgid "Austria"
+msgstr "Austria"
+
+msgid "Azerbaijan"
+msgstr "Azerbaijan"
+
+msgid "Bahamas"
+msgstr "Bahamas"
+
+msgid "Bahrain"
+msgstr "Bahrain"
+
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+msgid "Barbados"
+msgstr "Barbados"
+
+msgid "Belarus"
+msgstr "Belarus"
+
+msgid "Belgium"
+msgstr "Belgium"
+
+msgid "Belize"
+msgstr "Belize"
+
+msgid "Benin"
+msgstr "Benin"
+
+msgid "Bermuda"
+msgstr "Bermuda"
+
+msgid "Bhutan"
+msgstr "Bhutan"
+
+msgid "Bolivia"
+msgstr "Bolivia"
+
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia and Herzegovina"
+
+msgid "Botswana"
+msgstr "Botswana"
+
+msgid "Bouvet Island"
+msgstr "Bouvet Island"
+
+msgid "Brazil"
+msgstr "Brazil"
+
+msgid "British Indian Ocean Territory"
+msgstr "British Indian Ocean Territory"
+
+msgid "Brunei Darussalam"
+msgstr "Brunei Darussalam"
+
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+msgid "Burundi"
+msgstr "Burundi"
+
+msgid "Cambodia"
+msgstr "Cambodia"
+
+msgid "Cameroon"
+msgstr "Cameroon"
+
+msgid "Canada"
+msgstr "Canada"
+
+msgid "Cape Verde"
+msgstr "Cape Verde"
+
+msgid "Cayman Islands"
+msgstr "Cayman Islands"
+
+msgid "Central African Republic"
+msgstr "Central African Republic"
+
+msgid "Chad"
+msgstr "Chad"
+
+msgid "Chile"
+msgstr "Chile"
+
+msgid "China"
+msgstr "China"
+
+msgid "Christmas Island"
+msgstr "Christmas Island"
+
+msgid "Cocos (Keeling) Islands"
+msgstr "Cocos (Keeling) Islands"
+
+msgid "Colombia"
+msgstr "Colombia"
+
+msgid "Comoros"
+msgstr "Comoros"
+
+msgid "Congo"
+msgstr "Congo"
+
+msgid "Congo, the Democratic Republic of the"
+msgstr "Congo, the Democratic Republic of the"
+
+msgid "Cook Islands"
+msgstr "Cook Islands"
+
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+msgid "Cote D\'Ivoire"
+msgstr "Cote D\'Ivoire"
+
+msgid "Croatia"
+msgstr "Croatia"
+
+msgid "Cuba"
+msgstr "Cuba"
+
+msgid "Cyprus"
+msgstr "Cyprus"
+
+msgid "Czech Republic"
+msgstr "Czech Republic"
+
+msgid "Denmark"
+msgstr "Denmark"
+
+msgid "Djibouti"
+msgstr "Djibouti"
+
+msgid "Dominica"
+msgstr "Dominica"
+
+msgid "Dominican Republic"
+msgstr "Dominican Republic"
+
+msgid "Ecuador"
+msgstr "Ecuador"
+
+msgid "Egypt"
+msgstr "Egypt"
+
+msgid "El Salvador"
+msgstr "El Salvador"
+
+msgid "Equatorial Guinea"
+msgstr "Equatorial Guinea"
+
+msgid "Eritrea"
+msgstr "Eritrea"
+
+msgid "Estonia"
+msgstr "Estonia"
+
+msgid "Ethiopia"
+msgstr "Ethiopia"
+
+msgid "Falkland Islands (Malvinas)"
+msgstr "Falkland Islands (Malvinas)"
+
+msgid "Faroe Islands"
+msgstr "Faroe Islands"
+
+msgid "Fiji"
+msgstr "Fiji"
+
+msgid "Finland"
+msgstr "Finland"
+
+msgid "France"
+msgstr "France"
+
+msgid "French Guiana"
+msgstr "French Guiana"
+
+msgid "French Polynesia"
+msgstr "French Polynesia"
+
+msgid "French Southern Territories"
+msgstr "French Southern Territories"
+
+msgid "Gabon"
+msgstr "Gabon"
+
+msgid "Gambia"
+msgstr "Gambia"
+
+msgid "Georgia"
+msgstr "Georgia"
+
+msgid "Germany"
+msgstr "Germany"
+
+msgid "Ghana"
+msgstr "Ghana"
+
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+msgid "Greece"
+msgstr "Greece"
+
+msgid "Greenland"
+msgstr "Greenland"
+
+msgid "Grenada"
+msgstr "Grenada"
+
+msgid "Guadeloupe"
+msgstr "Guadeloupe"
+
+msgid "Guam"
+msgstr "Guam"
+
+msgid "Guatemala"
+msgstr "Guatemala"
+
+msgid "Guinea"
+msgstr "Guinea"
+
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bissau"
+
+msgid "Guyana"
+msgstr "Guyana"
+
+msgid "Haiti"
+msgstr "Haiti"
+
+msgid "Heard Island and Mcdonald Islands"
+msgstr "Heard Island and Mcdonald Islands"
+
+msgid "Holy See (Vatican City State)"
+msgstr "Holy See (Vatican City State)"
+
+msgid "Honduras"
+msgstr "Honduras"
+
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+msgid "Hungary"
+msgstr "Hungary"
+
+msgid "Iceland"
+msgstr "Iceland"
+
+msgid "India"
+msgstr "India"
+
+msgid "Indonesia"
+msgstr "Indonesia"
+
+msgid "Iran, Islamic Republic of"
+msgstr "Iran, Islamic Republic of"
+
+msgid "Iraq"
+msgstr "Iraq"
+
+msgid "Ireland"
+msgstr "Ireland"
+
+msgid "Israel"
+msgstr "Israel"
+
+msgid "Italy"
+msgstr "Italy"
+
+msgid "Jamaica"
+msgstr "Jamaica"
+
+msgid "Japan"
+msgstr "Japan"
+
+msgid "Jordan"
+msgstr "Jordan"
+
+msgid "Kazakhstan"
+msgstr "Kazakhstan"
+
+msgid "Kenya"
+msgstr "Kenya"
+
+msgid "Kiribati"
+msgstr "Kiribati"
+
+msgid "Korea, Democratic People\'s Republic of"
+msgstr "Korea, Democratic People\'s Republic of"
+
+msgid "Korea, Republic of"
+msgstr "Korea, Republic of"
+
+msgid "Kuwait"
+msgstr "Kuwait"
+
+msgid "Kyrgyzstan"
+msgstr "Kyrgyzstan"
+
+msgid "Lao People\'s Democratic Republic"
+msgstr "Lao People\'s Democratic Republic"
+
+msgid "Latvia"
+msgstr "Latvia"
+
+msgid "Lebanon"
+msgstr "Lebanon"
+
+msgid "Lesotho"
+msgstr "Lesotho"
+
+msgid "Liberia"
+msgstr "Liberia"
+
+msgid "Libyan Arab Jamahiriya"
+msgstr "Libyan Arab Jamahiriya"
+
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+msgid "Lithuania"
+msgstr "Lithuania"
+
+msgid "Luxembourg"
+msgstr "Luxembourg"
+
+msgid "Macao"
+msgstr "Macao"
+
+msgid "Macedonia, the Former Yugoslav Republic of"
+msgstr "Macedonia, the Former Yugoslav Republic of"
+
+msgid "Madagascar"
+msgstr "Madagascar"
+
+msgid "Malawi"
+msgstr "Malawi"
+
+msgid "Malaysia"
+msgstr "Malaysia"
+
+msgid "Maldives"
+msgstr "Maldives"
+
+msgid "Mali"
+msgstr "Mali"
+
+msgid "Malta"
+msgstr "Malta"
+
+msgid "Marshall Islands"
+msgstr "Marshall Islands"
+
+msgid "Martinique"
+msgstr "Martinique"
+
+msgid "Mauritania"
+msgstr "Mauritania"
+
+msgid "Mauritius"
+msgstr "Mauritius"
+
+msgid "Mayotte"
+msgstr "Mayotte"
+
+msgid "Mexico"
+msgstr "Mexico"
+
+msgid "Micronesia, Federated States of"
+msgstr "Micronesia, Federated States of"
+
+msgid "Moldova, Republic of"
+msgstr "Moldova, Republic of"
+
+msgid "Monaco"
+msgstr "Monaco"
+
+msgid "Mongolia"
+msgstr "Mongolia"
+
+msgid "Montserrat"
+msgstr "Montserrat"
+
+msgid "Morocco"
+msgstr "Morocco"
+
+msgid "Mozambique"
+msgstr "Mozambique"
+
+msgid "Myanmar"
+msgstr "Myanmar"
+
+msgid "Namibia"
+msgstr "Namibia"
+
+msgid "Nauru"
+msgstr "Nauru"
+
+msgid "Nepal"
+msgstr "Nepal"
+
+msgid "Netherlands"
+msgstr "Netherlands"
+
+msgid "Netherlands Antilles"
+msgstr "Netherlands Antilles"
+
+msgid "New Caledonia"
+msgstr "New Caledonia"
+
+msgid "New Zealand"
+msgstr "New Zealand"
+
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+msgid "Niger"
+msgstr "Niger"
+
+msgid "Nigeria"
+msgstr "Nigeria"
+
+msgid "Niue"
+msgstr "Niue"
+
+msgid "Norfolk Island"
+msgstr "Norfolk Island"
+
+msgid "Northern Mariana Islands"
+msgstr "Northern Mariana Islands"
+
+msgid "Norway"
+msgstr "Norway"
+
+msgid "Oman"
+msgstr "Oman"
+
+msgid "Pakistan"
+msgstr "Pakistan"
+
+msgid "Palau"
+msgstr "Palau"
+
+msgid "Palestinian Territory, Occupied"
+msgstr "Palestinian Territory, Occupied"
+
+msgid "Panama"
+msgstr "Panama"
+
+msgid "Papua New Guinea"
+msgstr "Papua New Guinea"
+
+msgid "Paraguay"
+msgstr "Paraguay"
+
+msgid "Peru"
+msgstr "Peru"
+
+msgid "Philippines"
+msgstr "Philippines"
+
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+msgid "Poland"
+msgstr "Poland"
+
+msgid "Portugal"
+msgstr "Portugal"
+
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+msgid "Qatar"
+msgstr "Qatar"
+
+msgid "Reunion"
+msgstr "Reunion"
+
+msgid "Romania"
+msgstr "Romania"
+
+msgid "Russian Federation"
+msgstr "Russian Federation"
+
+msgid "Rwanda"
+msgstr "Rwanda"
+
+msgid "Saint Helena"
+msgstr "Saint Helena"
+
+msgid "Saint Kitts and Nevis"
+msgstr "Saint Kitts and Nevis"
+
+msgid "Saint Lucia"
+msgstr "Saint Lucia"
+
+msgid "Saint Pierre and Miquelon"
+msgstr "Saint Pierre and Miquelon"
+
+msgid "Saint Vincent and the Grenadines"
+msgstr "Saint Vincent and the Grenadines"
+
+msgid "Samoa"
+msgstr "Samoa"
+
+msgid "San Marino"
+msgstr "San Marino"
+
+msgid "Sao Tome and Principe"
+msgstr "Sao Tome and Principe"
+
+msgid "Saudi Arabia"
+msgstr "Saudi Arabia"
+
+msgid "Senegal"
+msgstr "Senegal"
+
+msgid "Serbia and Montenegro"
+msgstr "Serbia and Montenegro"
+
+msgid "Seychelles"
+msgstr "Seychelles"
+
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+msgid "Singapore"
+msgstr "Singapore"
+
+msgid "Slovakia"
+msgstr "Slovakia"
+
+msgid "Slovenia"
+msgstr "Slovenia"
+
+msgid "Solomon Islands"
+msgstr "Solomon Islands"
+
+msgid "Somalia"
+msgstr "Somalia"
+
+msgid "South Africa"
+msgstr "South Africa"
+
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "South Georgia and the South Sandwich Islands"
+
+msgid "Spain"
+msgstr "Spain"
+
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+msgid "Sudan"
+msgstr "Sudan"
+
+msgid "Suriname"
+msgstr "Suriname"
+
+msgid "Svalbard and Jan Mayen"
+msgstr "Svalbard and Jan Mayen"
+
+msgid "Swaziland"
+msgstr "Swaziland"
+
+msgid "Sweden"
+msgstr "Sweden"
+
+msgid "Switzerland"
+msgstr "Switzerland"
+
+msgid "Syrian Arab Republic"
+msgstr "Syrian Arab Republic"
+
+msgid "Taiwan, Province of China"
+msgstr "Taiwan, Province of China"
+
+msgid "Tajikistan"
+msgstr "Tajikistan"
+
+msgid "Tanzania, United Republic of"
+msgstr "Tanzania, United Republic of"
+
+msgid "Thailand"
+msgstr "Thailand"
+
+msgid "Timor-Leste"
+msgstr "Timor-Leste"
+
+msgid "Togo"
+msgstr "Togo"
+
+msgid "Tokelau"
+msgstr "Tokelau"
+
+msgid "Tonga"
+msgstr "Tonga"
+
+msgid "Trinidad and Tobago"
+msgstr "Trinidad and Tobago"
+
+msgid "Tunisia"
+msgstr "Tunisia"
+
+msgid "Turkey"
+msgstr "Turkey"
+
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+msgid "Turks and Caicos Islands"
+msgstr "Turks and Caicos Islands"
+
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+msgid "Uganda"
+msgstr "Uganda"
+
+msgid "Ukraine"
+msgstr "Ukraine"
+
+msgid "United Arab Emirates"
+msgstr "United Arab Emirates"
+
+msgid "United Kingdom"
+msgstr "United Kingdom"
+
+msgid "United States"
+msgstr "United States"
+
+msgid "Uruguay"
+msgstr "Uruguay"
+
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+msgid "Venezuela"
+msgstr "Venezuela"
+
+msgid "Viet Nam"
+msgstr "Viet Nam"
+
+msgid "Virgin Islands, British"
+msgstr "Virgin Islands, British"
+
+msgid "Virgin Islands, U.s."
+msgstr "Virgin Islands, U.s."
+
+msgid "Wallis and Futuna"
+msgstr "Wallis and Futuna"
+
+msgid "Western Sahara"
+msgstr "Western Sahara"
+
+msgid "Yemen"
+msgstr "Yemen"
+
+msgid "Zambia"
+msgstr "Zambia"
+
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+msgid "Invalid argument #1: %s is not a valid %s identifyer."
+msgstr "Invalid argument #1: %s is not a valid %s identifyer."
+

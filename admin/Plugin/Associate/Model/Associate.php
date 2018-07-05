@@ -1,0 +1,1 @@
+<?phpclass Associate extends AssociateAppModel {    var $name = 'Associate';    var $actsAs = array('Search.Searchable');    }?>

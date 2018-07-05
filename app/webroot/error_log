@@ -1,0 +1,91 @@
+[25-Aug-2015 11:55:29 asia/kolkata] PHP Fatal error:  Call to undefined function str_to_replace() in /home/supertm4/public_html/app/View/Bookings/book_now_day_package.ctp on line 19
+[21-Sep-2015 10:24:55 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 10:24:55 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 10:24:55 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 10:24:55 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 10:24:55 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 10:24:55 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 14:57:19 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 14:57:19 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 14:57:19 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 14:57:19 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 14:57:19 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 14:57:19 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 14:57:43 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 14:57:43 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 14:57:43 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 14:57:43 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 14:57:43 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 14:57:43 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:15:26 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:15:26 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:15:26 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:15:26 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:15:26 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:15:26 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:15:30 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:15:30 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:15:30 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:15:30 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:15:30 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:15:30 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:15:44 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:15:44 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:15:44 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:15:44 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:15:44 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:15:44 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:16:31 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:16:31 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:16:31 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:16:31 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:16:31 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:16:31 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:16:34 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:16:34 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:16:34 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:16:34 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:16:34 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:16:34 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:18:00 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:18:00 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:18:00 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:18:00 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:18:00 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:18:00 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:18:02 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:18:02 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:18:02 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 15:18:02 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 15:18:02 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 15:18:02 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 18:52:05 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 18:52:05 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 18:52:05 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[21-Sep-2015 18:52:05 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[21-Sep-2015 18:52:05 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[21-Sep-2015 18:52:05 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[28-Sep-2015 14:14:34 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[28-Sep-2015 14:14:34 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[28-Sep-2015 14:14:34 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[28-Sep-2015 14:14:34 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[28-Sep-2015 14:14:34 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[28-Sep-2015 14:14:34 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[28-Sep-2015 14:14:48 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[28-Sep-2015 14:14:48 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[28-Sep-2015 14:14:48 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[28-Sep-2015 14:14:48 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[28-Sep-2015 14:14:48 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[28-Sep-2015 14:14:48 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[28-Sep-2015 14:18:35 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[28-Sep-2015 14:18:35 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[28-Sep-2015 14:18:35 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[28-Sep-2015 14:18:35 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[28-Sep-2015 14:18:35 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[28-Sep-2015 14:18:35 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[28-Sep-2015 15:02:41 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[28-Sep-2015 15:02:41 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[28-Sep-2015 15:02:41 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581
+[28-Sep-2015 15:02:41 asia/kolkata] PHP Warning:  get_class() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 574
+[28-Sep-2015 15:02:41 asia/kolkata] PHP Warning:  get_object_vars() expects parameter 1 to be object, resource given in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 580
+[28-Sep-2015 15:02:41 asia/kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/supertm4/public_html/lib/Cake/Utility/Debugger.php on line 581

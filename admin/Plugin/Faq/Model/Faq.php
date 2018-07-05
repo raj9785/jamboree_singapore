@@ -1,0 +1,1 @@
+<?phpclass Faq extends FaqAppModel {    var $name = 'Faq';    var $actsAs = array('Search.Searchable');    public $validate = array();    }?>

@@ -1,0 +1,1 @@
+<?phpclass VideoReview extends VideoReviewAppModel {    var $name = 'VideoReview';    var $actsAs = array('Search.Searchable');    public $validate = array();    public $belongsTo = array(        'Course' => array("fields" => array("name", "id"))    );}?>

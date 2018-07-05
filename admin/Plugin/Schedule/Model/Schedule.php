@@ -1,0 +1,1 @@
+<?phpclass Schedule extends ScheduleAppModel {    var $name = 'Schedule';    var $actsAs = array('Search.Searchable');    public $belongsTo = array(        'Course' => array("fields" => array("name", "id"))    );}?>
