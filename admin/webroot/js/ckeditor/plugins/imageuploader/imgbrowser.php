@@ -73,7 +73,7 @@ $_SESSION["username"] = "disabled_pw";
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title><?php echo $imagebrowser1; ?> :: SuperCabz</title>
+    <title><?php echo $imagebrowser1; ?> :: GMAF</title>
     <meta name="author" content="Moritz Maleck">
     <link rel="icon" href="img/cd-ico-browser.ico">
     

@@ -1,0 +1,1 @@
+<?phpclass Download extends DownloadAppModel {    var $name = 'Download';    var $actsAs = array('Search.Searchable');    public $belongsTo = array(        'DeadlineCategory' => array("fields" => array("name", "id")),        'DownloadCategory' => array("fields" => array("name", "id"))    );}?>

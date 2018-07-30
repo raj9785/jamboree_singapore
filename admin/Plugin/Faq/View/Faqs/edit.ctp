@@ -7,7 +7,7 @@
 
     });
 </script>
-
+<?php echo $this->Html->script('ckeditor/ckeditor.js', array('inline' => false)); ?>
 <?php
 echo $this->Html->script(array('add_faq'));
 ?>
@@ -55,13 +55,25 @@ echo $this->Html->script(array('add_faq'));
                                         <span id="menu_slug-error" class="help-block"></span>
                                     </div>
                                 </div>
-                                
+
+                                <?php
+                                if ($users_data["Faq"]['deadline_category_id']) {
+                                    ?>
+                                    <div class="col-md-12 d_course"> 
+                                        <div class="form-group">
+                                            <label class="control-label">Course <span class="symbol required"></span></label>
+                                            <?php echo $this->Form->select('deadline_category_id', $dcat_list, array('id' => 'deadline_category_id', "class" => "form-control validate[required]", 'empty' => "Select Course")); ?>
+                                            <span id="menu_slug-error" class="help-block"></span>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+
 
                                 <div class="col-md-12"> 
 
                                     <div class="form-group">
                                         <label class="control-label">Question <span class="symbol required"></span></label>
-                                        <?php echo $this->Form->input('question', array('type' => 'textarea','rows'=>3 ,'class' => 'form-control', 'id' => 'question', 'div' => false, 'label' => false, 'required' => true)); ?>
+                                        <?php echo $this->Form->input('question', array('type' => 'textarea', 'rows' => 3, 'class' => 'form-control', 'id' => 'question', 'div' => false, 'label' => false, 'required' => true)); ?>
                                         <span id="question-error" class="help-block"></span>
                                     </div>
                                 </div>
@@ -69,7 +81,7 @@ echo $this->Html->script(array('add_faq'));
 
                                     <div class="form-group">
                                         <label class="control-label">Answer <span class="symbol required"></span></label>
-                                        <?php echo $this->Form->input('answer', array('type' => 'textarea','rows'=>6 ,'class' => 'form-control', 'id' => 'answer', 'div' => false, 'label' => false, 'required' => true)); ?>
+                                        <?php echo $this->Form->input('answer', array('type' => 'textarea', 'rows' => 6, 'class' => 'form-control', 'id' => 'answer', 'div' => false, 'label' => false, 'required' => true)); ?>
                                         <span id="answer-error" class="help-block"></span>
                                     </div>
                                 </div>
@@ -107,4 +119,43 @@ echo $this->Html->script(array('add_faq'));
     <?php echo $this->element('footer'); ?>
     <!-- end: FOOTER -->
 </div>
+<?php
+$unique_id = "jamboree";
+?>
+<script type="text/javascript">
+    // <![CDATA[
+    editor = CKEDITOR.replace('answer',
+            {
+                height: 400,
+                //width: 800,
+                //enterMode: CKEDITOR.ENTER_BR,
+
+                extraPlugins: 'imageuploader',
+                filebrowserBrowseUrl: '<?php echo WEBSITE_URL; ?>admin/js/ckeditor/plugins/imageuploader/imgbrowser.php?unique_id=<?php echo $unique_id; ?>',
+                                filebrowserUploadUrl: '<?php echo WEBSITE_URL; ?>albums/<?php echo $unique_id; ?>/',
+                                filebrowserImageBrowseUrl: '<?php echo WEBSITE_URL; ?>admin/js/ckeditor/plugins/imageuploader/imgbrowser.php?unique_id=<?php echo $unique_id; ?>',
+                                                filebrowserImageUploadUrl: '<?php echo WEBSITE_URL; ?>albums/<?php echo $unique_id; ?>/',
+                                            });
+                                    //]]>	
+
+                                    editor.on('blur', function (evt) {
+                                        var value = editor.getData();
+                                        $(".preview_data").html(value);
+                                    });
+                                    editor.on('focus', function (evt) {
+                                        var value = editor.getData();
+                                        $(".preview_data").html(value);
+                                    });
+
+                                    $("#prv").on("click", function () {
+                                        var value = editor.getData();
+
+
+                                        $(".preview_data").html(value);
+
+
+
+                                    });
+
+</script>
 

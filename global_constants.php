@@ -157,6 +157,9 @@ define("REVIEWS_IMAGE_PATH", APP_WEBROOT_ROOT_PATH_IMAGE . 'uploads/reviews/');
 define("STUDENTS_IMAGE_PATH", APP_WEBROOT_ROOT_PATH_IMAGE . 'uploads/students/');
 define("ASSOCIATES_IMAGE_PATH", APP_WEBROOT_ROOT_PATH_IMAGE . 'uploads/associates/');
 define("SOCIALS_IMAGE_PATH", APP_WEBROOT_ROOT_PATH_IMAGE . 'uploads/socials/');
+
+define("PAGE_ICON_PATH", APP_WEBROOT_ROOT_PATH_IMAGE . 'uploads/icons/');
+define("DOCS_PATH", APP_WEBROOT_ROOT_PATH_IMAGE . 'uploads/docs/');
 //http paths
 define("BLOG_IMAGE_HTTP_PATH", WEBSITE_URL_IMAGE . 'uploads/blogs/');
 define("BLOG_LARGE_IMAGE_HTTP_PATH", BLOG_IMAGE_HTTP_PATH . 'large/');
@@ -167,3 +170,6 @@ define("REVIEWS_IMAGE_HTTP_PATH", WEBSITE_URL_IMAGE . 'uploads/reviews/');
 define("STUDENTS_IMAGE_HTTP_PATH", WEBSITE_URL_IMAGE . 'uploads/students/');
 define("ASSOCIATES_IMAGE_HTTP_PATH", WEBSITE_URL_IMAGE . 'uploads/associates/');
 define("SOCIALS_IMAGE_HTTP_PATH", WEBSITE_URL_IMAGE . 'uploads/socials/');
+
+define("PAGE_ICON_HTTP_PATH", WEBSITE_URL_IMAGE . 'uploads/icons/');
+define("DOCS_HTTP_PATH", WEBSITE_URL_IMAGE . 'uploads/docs/');

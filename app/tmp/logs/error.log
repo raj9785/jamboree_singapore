@@ -16027,3 +16027,66 @@ Request URL: /jamboree/uploads/socials/MTUzMDY5MDAwNH5AfmxpbmtlZGlu.png
 Stack Trace:
 #0 C:\xampp\htdocs\jamboree\app\webroot\index.php(94): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2018-07-14 12:25:25 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /jamboree/uploads/banners/MTUzMTU1MTMyNH5AfnRyYWluaW5nLWljb24=.png
+Stack Trace:
+#0 C:\xampp\htdocs\jamboree\app\webroot\index.php(94): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-07-14 12:25:29 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /jamboree/uploads/banners/MTUzMTU1MTMyNH5AfnRyYWluaW5nLWljb24=.png
+Stack Trace:
+#0 C:\xampp\htdocs\jamboree\app\webroot\index.php(94): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-07-19 12:23:07 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /jamboree/uploads/reviews/MTUzMTk4MzE4Nn5Afk1UVXpNVFE0T0RJM01ESXdma0IrYVc1dVpYSXRZbUZ1Ym1WeQ==.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\jamboree\app\webroot\index.php(94): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-07-19 12:24:29 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /jamboree/uploads/reviews/MTUzMTk4MzI2OH5AfkZlZSBSZWNlaXB0.pdf
+Stack Trace:
+#0 C:\xampp\htdocs\jamboree\app\webroot\index.php(94): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-07-19 12:24:29 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /jamboree/uploads/reviews/MTUzMTk4MzE4Nn5Afk1UVXpNVFE0T0RJM01ESXdma0IrYVc1dVpYSXRZbUZ1Ym1WeQ==.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\jamboree\app\webroot\index.php(94): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-07-19 12:24:37 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /jamboree/uploads/reviews/MTUzMTk4MzI2OH5AfkZlZSBSZWNlaXB0.pdf
+Stack Trace:
+#0 C:\xampp\htdocs\jamboree\app\webroot\index.php(94): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-07-19 12:24:37 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /jamboree/uploads/reviews/MTUzMTk4MzE4Nn5Afk1UVXpNVFE0T0RJM01ESXdma0IrYVc1dVpYSXRZbUZ1Ym1WeQ==.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\jamboree\app\webroot\index.php(94): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

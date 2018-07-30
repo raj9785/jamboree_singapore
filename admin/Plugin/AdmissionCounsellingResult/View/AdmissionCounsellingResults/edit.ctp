@@ -1,10 +1,19 @@
-
+<?php
+echo $this->Html->css(array('jquery.fancybox.css?v=2.1.5'), null, array('inline' => false));
+echo $this->Html->script(array('jquery.fancybox.js?v=2.1.5'), array('inline' => false));
+?>
 <script type="text/javascript">
     jQuery(document).ready(function () {
         jQuery("#cancel_button").click(function () {
             window.location.href = '<?php echo $this->Html->url(array('plugin' => 'admission_counselling_result', 'controller' => 'admission_counselling_results', 'action' => 'index')); ?>';
         });
-
+        $("#single_1").fancybox({
+            helpers: {
+                title: {
+                    type: 'float'
+                }
+            }
+        });
     });
 </script>
 
@@ -68,6 +77,39 @@ echo $this->Html->script(array('add_admission_counselling_result'));
 
 
                                 </div>
+
+                                <?php
+                                $file_name = $users_data["AdmissionCounsellingResult"]['image'];
+                                ?>
+                                <div class="col-md-12 " > 
+                                    <div class="form-group">
+                                        <label class="control-label"><?php echo $file_name ? "Change Student Image" : "Student Image"; ?> </label>
+                                        <?php echo $this->Form->file('url_image', array('id' => "url_image", 'class' => " validate[required]")); ?>
+                                        <span id="image-error" class="help-block"></span>
+                                    </div>
+                                </div>
+
+                                <?php
+                                if ($file_name) {
+                                    ?>  
+                                    <div class="col-md-12"> 
+
+                                        <div class="form-group">
+                                            <label class="control-label">Uploaded Image </label>
+                                            <?php
+                                            if (is_file(STUDENTS_IMAGE_PATH . $file_name)) {
+                                                $images = $this->Html->image(STUDENTS_IMAGE_HTTP_PATH . $file_name, array('height' => 200, 'height' => '150'));
+                                                ?>
+                                                <a id="single_1" href="<?php echo STUDENTS_IMAGE_HTTP_PATH . $file_name; ?>">
+                                                    <?php echo $images; ?>
+                                                </a>
+                                            <?php } ?>
+                                        </div>
+
+
+
+                                    </div>
+                                <?php } ?>
 
                                 <div class="col-md-12"> 
 

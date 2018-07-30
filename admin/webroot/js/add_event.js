@@ -67,15 +67,15 @@ $(document).ready(function () {
             $("#event_url-error").html("");
         }
 
-        if ($.trim($("#description").val()) == "") {
-            $("#description-error").html("Please enter description");
-            $("#description").parent('div').addClass('has-error');
-            $("#description").focus();
-            return false;
-        } else {
-            $("#description").parent('div').removeClass('has-error');
-            $("#description-error").html("");
-        }
+//        if ($.trim($("#description").val()) == "") {
+//            $("#description-error").html("Please enter description");
+//            $("#description").parent('div').addClass('has-error');
+//            $("#description").focus();
+//            return false;
+//        } else {
+//            $("#description").parent('div').removeClass('has-error');
+//            $("#description-error").html("");
+//        }
 
     });
 

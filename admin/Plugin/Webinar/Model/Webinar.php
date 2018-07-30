@@ -1,0 +1,1 @@
+<?phpclass Webinar extends WebinarAppModel {    var $name = 'Webinar';    var $actsAs = array('Search.Searchable');    public $validate = array();}?>

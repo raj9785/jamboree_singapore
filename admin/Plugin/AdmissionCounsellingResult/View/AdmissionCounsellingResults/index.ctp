@@ -1,4 +1,7 @@
-
+<?php
+echo $this->Html->css(array('jquery.fancybox.css?v=2.1.5'), null, array('inline' => false));
+echo $this->Html->script(array('jquery.fancybox.js?v=2.1.5'), array('inline' => false));
+?>
 <?php echo $this->Html->css(array('sweet-alert.css', 'ie9.css', 'toastr.min.css', 'DT_bootstrap.css'), null, array('inline' => false)); ?>
 <?php
 echo $this->Html->script(array('jquery.dataTables.min.js', 'sweet-alert.min.js', 'ui-notifications.js'), array('inline' => false));
@@ -10,7 +13,13 @@ echo $this->Html->script(array('jquery-ui.min'));
         jQuery("#add_new_user").click(function () {
             window.location.href = '<?php echo $this->Html->url(array('plugin' => 'admission_counselling_result', 'controller' => 'admission_counselling_results', 'action' => 'add')); ?>';
         });
-
+        $("#single_1").fancybox({
+            helpers: {
+                title: {
+                    type: 'float'
+                }
+            }
+        });
 
         $('#AdmissionCounsellingResultFromDate').datepicker({
             dateFormat: "yy-mm-dd",
@@ -160,6 +169,7 @@ echo $this->Html->script(array('jquery-ui.min'));
                                 <thead>
                                     <tr>
                                         <th class="hidden-xs">S.No.</th>
+                                        <th class="hidden-xs">Image</th>
                                         <th class="hidden-xs">Student Name</th>
                                         <th class="hidden-xs">Course Name</th>
                                         <th class="hidden-xs">University</th>
@@ -184,7 +194,21 @@ echo $this->Html->script(array('jquery-ui.min'));
                                         <?php foreach ($records as $list) { ?>
                                             <tr>
                                                 <td><?php echo $i; ?></td>
+                                                <td><?php
+                                                    $file_name = $list[$model]['image'];
+                                                    if ($file_name) {
+                                                        $images = $this->Html->image(STUDENTS_IMAGE_HTTP_PATH . $file_name, array('width' => "75px", 'height' => '75px'));
+                                                        ?>
+                                                        <a id="single_1" href="<?php echo STUDENTS_IMAGE_HTTP_PATH . $file_name; ?>">
+                                                            <?php echo $images; ?>
+                                                        </a>
+                                                        <?php
+                                                    } else {
+                                                        echo $this->Html->image("/images/noimage.jpg", array('width' => "75px", 'height' => '75px'));
+                                                    }
+                                                    ?>
 
+                                                </td>
                                                 <td>
                                                     <?php
                                                     echo $list[$model]['student_name'];

@@ -11,15 +11,15 @@ $(document).ready(function () {
         }
 
 
-        if ($.trim($("#image").val()) == "") {
-            $("#image-error").html("Please select image");
-            $("#image").parent('div').addClass('has-error');
-            $("#image").focus();
-            return false;
-        } else {
-            $("#image").parent('div').removeClass('has-error');
-            $("#image-error").html("");
-        }
+//        if ($.trim($("#image").val()) == "") {
+//            $("#image-error").html("Please select image");
+//            $("#image").parent('div').addClass('has-error');
+//            $("#image").focus();
+//            return false;
+//        } else {
+//            $("#image").parent('div').removeClass('has-error');
+//            $("#image-error").html("");
+//        }
 
 
 

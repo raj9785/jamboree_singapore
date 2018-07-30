@@ -121,6 +121,8 @@ class AppController extends Controller {
     }
 
     public function global_logs($table_name, $table_id, $action_type, $text_action, $json_data) {
+        return true;
+        exit;
         $this->loadModel("Logs");
         $arr['Logs']['table_name'] = $table_name;
         $arr['Logs']['table_id'] = $table_id;
@@ -225,6 +227,8 @@ class AppController extends Controller {
     function download($filename, $type = '') {
         if ($type == 'result_format') {
             $downloadPath = RESULT_FORMAT_PATH;
+        } else if ($type == 'docs') {
+            $downloadPath = DOCS_PATH;
         }
         $this->downloadFile($filename, $downloadPath, $alt_name = '');
     }

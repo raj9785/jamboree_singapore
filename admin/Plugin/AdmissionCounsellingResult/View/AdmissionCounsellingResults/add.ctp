@@ -65,6 +65,13 @@ echo $this->Html->script(array('add_admission_counselling_result'));
 
 
                                 </div>
+                                <div class="col-md-12 " > 
+                                    <div class="form-group">
+                                        <label class="control-label">Student Image </label>
+                                        <?php echo $this->Form->file('image', array('id' => "image", 'class' => " validate[required]")); ?>
+                                        <span id="image-error" class="help-block"></span>
+                                    </div>
+                                </div>
 
                                 <div class="col-md-12"> 
 

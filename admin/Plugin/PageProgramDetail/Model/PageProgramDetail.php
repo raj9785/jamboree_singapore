@@ -1,0 +1,1 @@
+<?phpclass PageProgramDetail extends PageProgramDetailAppModel {    var $name = 'PageProgramDetail';    var $actsAs = array('Search.Searchable');    public $belongsTo = array(           );}?>

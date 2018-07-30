@@ -141,7 +141,7 @@ echo $this->Html->script(array('jquery-ui.min'));
                         </div>  
                         <div class="col-sm-3 text-align-right">
                             <button class="btn btn-green add-row" id='add_new_user'>
-                                <i class="fa fa-plus"></i>&nbsp;Add New Schedule
+                                <i class="fa fa-plus"></i>&nbsp;Add New Batch Schedule
                             </button>
                         </div>
 

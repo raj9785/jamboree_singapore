@@ -153,7 +153,7 @@ echo $this->Html->script(array('reviews'));
                                 <div class="col-md-6"> 
 
                                     <div class="form-group">
-                                        <label class="control-label">Reviews <span class="symbol required"></span></label>
+                                        <label class="control-label">Testimonials <span class="symbol required"></span></label>
                                         <?php echo $this->Form->input('reviews', array('type' => 'textarea', 'class' => 'form-control ckeditor', 'id' => 'reviews', 'div' => false, 'label' => false)); ?>
                                         <span id="reviews-error" class="help-block"></span>
                                     </div>

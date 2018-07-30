@@ -47,7 +47,7 @@
                                 <i class="ti-settings"></i>
                             </div>
                             <div class="item-inner">
-                                <span class="title">Schedules </span>
+                                <span class="title">Batch Schedules </span>
                             </div>
                         </div>
                     </a>
@@ -191,6 +191,12 @@
                                 <span class="title">Career Categories</span>
                             </a>
                         </li>
+                        
+                        <li>
+                            <a href="<?php echo $this->Html->url(array('plugin' => 'resume', 'controller' => 'resumes', 'action' => 'index')); ?>">
+                                <span class="title">Resume List</span>
+                            </a>
+                        </li>
 
 
                     </ul>
@@ -204,14 +210,14 @@
                                 <i class="ti-settings"></i>
                             </div>
                             <div class="item-inner">
-                                <span class="title">Reviews <i class="icon-arrow"></i> </span>
+                                <span class="title">Testimonials <i class="icon-arrow"></i> </span>
                             </div>
                         </div>
                     </a>
                     <ul class="sub-menu">
                         <li>
                             <a href="<?php echo $this->Html->url(array('plugin' => 'review', 'controller' => 'reviews', 'action' => 'index')); ?>">
-                                <span class="title">Reviews</span>
+                                <span class="title">Testimonials</span>
                             </a>
                         </li>
                         <li>
@@ -249,15 +255,72 @@
                                 <span class="title"> Resource Centre Videos</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="<?php echo $this->Html->url(array('plugin' => 'video', 'controller' => 'videos', 'action' => 'index', "?" => array('video_category_id' => "2", 'title' => "Events Videos"))); ?>">
+<!--                        <li>
+                            <a href="<?php //echo $this->Html->url(array('plugin' => 'video', 'controller' => 'videos', 'action' => 'index', "?" => array('video_category_id' => "2", 'title' => "Events Videos"))); ?>">
                                 <span class="title"> Events Videos</span>
                             </a>
-                        </li>
+                        </li>-->
 
 
 
                     </ul>
+                </li>
+
+
+                <li class="slide_class <?php echo (isset($tab_open) && $tab_open == 'downloads') ? 'active open' : '' ?>">
+                    <a href="<?php echo $this->Html->url(array('plugin' => 'download', 'controller' => 'downloads', 'action' => 'index')); ?>">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-settings"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title">Students Download </span>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+
+                <li class="slide_class <?php echo (isset($tab_open) && $tab_open == 'admission_procedures') ? 'active open' : '' ?>">
+                    <a href="<?php echo $this->Html->url(array('plugin' => 'admission_procedure', 'controller' => 'admission_procedures', 'action' => 'index')); ?>">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-settings"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title">Admission Procedures </span>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+
+                <li class="slide_class <?php echo (isset($tab_open) && $tab_open == 'university_deadlines') ? 'active open' : '' ?>">
+                    <a href="<?php echo $this->Html->url(array('plugin' => 'university_deadline', 'controller' => 'university_deadlines', 'action' => 'index')); ?>">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-settings"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title">University Deadlines </span>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+
+                <li class="slide_class <?php echo (isset($tab_open) && $tab_open == 'webinars') ? 'active open' : '' ?>">
+                    <a href="<?php echo $this->Html->url(array('plugin' => 'webinar', 'controller' => 'webinars', 'action' => 'edit', 1)); ?>">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-settings"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title">Webinar Iframe URL </span>
+                            </div>
+                        </div>
+                    </a>
+
                 </li>
 
 
@@ -269,8 +332,9 @@
 
 
 
-<!--                <li class="slide_class <?php //echo (isset($tab_open) && $tab_open == 'medias') ? 'active open' : ''            ?>">
-                    <a href="<?php //echo $this->Html->url(array('plugin' => 'media', 'controller' => 'medias', 'action' => 'index'));            ?>">
+
+<!--                <li class="slide_class <?php //echo (isset($tab_open) && $tab_open == 'medias') ? 'active open' : ''                    ?>">
+                    <a href="<?php //echo $this->Html->url(array('plugin' => 'media', 'controller' => 'medias', 'action' => 'index'));                    ?>">
                         <div class="item-content">
                             <div class="item-media">
                                 <i class="ti-settings"></i>
@@ -351,7 +415,7 @@
                     <ul class="sub-menu">
 
                         <li>
-                            <a href="<?php echo $this->Html->url(array('plugin' => false, 'controller' => 'pages', 'action' => 'index'));       ?>">
+                            <a href="<?php echo $this->Html->url(array('plugin' => false, 'controller' => 'pages', 'action' => 'index')); ?>">
                                 <span class="title"> Pages</span>
                             </a>
                         </li>

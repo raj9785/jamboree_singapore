@@ -57,10 +57,10 @@ echo $this->Html->script(array('jquery-ui.min'));
             var status_id = main_status_id[1];
             var status_current = main_status_id[2];
             if (status_current == 1) {
-                var heading = "Review will be inactivated";
+                var heading = "Testimonial will be inactivated";
                 var title_resp = "Inactivated";
             } else {
-                var heading = "Review will be activated";
+                var heading = "Testimonial will be activated";
                 var title_resp = "Activated";
             }
 
@@ -117,6 +117,66 @@ echo $this->Html->script(array('jquery-ui.min'));
 
         });
 
+        $(".showonhome").on('click', function () {
+            var id = $(this).attr('id');
+            var main_status_id = id.split("_");
+            var id_vid = main_status_id[0];
+            var status_current = main_status_id[1];
+            if (status_current == 1) {
+                var heading = "Testimonial will be removed from highlighted";
+                var title_resp = "Removed";
+            } else {
+                var heading = "Testimonial will be marked as highlighted";
+                var title_resp = "Activated";
+            }
+
+
+            swal({
+                title: "Are you sure?",
+                text: heading,
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: '#DD6B55',
+                confirmButtonText: 'Ok',
+                closeOnConfirm: false,
+            },
+                    function () {
+                        $.ajax({
+                            type: 'post',
+                            url: '<?php echo $this->Html->url(array('plugin' => 'review', 'controller' => 'reviews', 'action' => 'home_status_ajax')); ?>',
+                            data: 'id=' + id_vid,
+                            dataType: 'json',
+                            success: function (data) {
+                                if (data == 1) {
+                                    swal({
+                                        title: title_resp + "!",
+                                        text: title_resp,
+                                        type: "success",
+                                        showCancelButton: false,
+                                        confirmButtonColor: '#d6e9c6',
+                                        confirmButtonText: 'OK',
+                                        closeOnConfirm: false,
+                                    }, function () {
+                                        window.location.reload();
+                                    });
+                                } else {
+                                    swal({
+                                        title: "Error!",
+                                        text: "Error!",
+                                        type: "error",
+                                        showCancelButton: false,
+                                        confirmButtonColor: '#d6e9c6',
+                                        confirmButtonText: 'OK',
+                                        closeOnConfirm: false,
+                                    }, function () {
+                                        window.location.reload();
+                                    });
+                                }
+                            }
+                        });
+                    });
+        });
+
 
 
     });
@@ -141,7 +201,7 @@ echo $this->Html->script(array('jquery-ui.min'));
                         </div>  
                         <div class="col-sm-3 text-align-right">
                             <button class="btn btn-green add-row" id='add_new_user'>
-                                <i class="fa fa-plus"></i>&nbsp;Add New Review
+                                <i class="fa fa-plus"></i>&nbsp;Add New Testimonial
                             </button>
                         </div>
 
@@ -182,7 +242,8 @@ echo $this->Html->script(array('jquery-ui.min'));
                                         <th class="hidden-xs">Image</th>
                                         <th class="hidden-xs">Course</th>
                                         <th class="hidden-xs">Student Name</th>
-                                        <th class="hidden-xs" style="width:40%">Reviews</th>
+                                        <th class="hidden-xs" style="width:40%">Testimonials</th>
+                                        <th class="hidden-xs">Mark as Highlighted</th>
                                         <th class="hidden-xs">Created On</th>
                                         <th class="hidden-xs">Status</th>
                                         <th class="hidden-xs">Action</th>
@@ -224,6 +285,9 @@ echo $this->Html->script(array('jquery-ui.min'));
                                                 <td><?php
                                                     echo $list['Review']['reviews'];
                                                     ?>
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" class="showonhome" <?php echo $list[$model]['is_top_highlighted'] == 1 ? 'checked="checked"' : ""; ?> name="show_on_home" id="<?php echo $list[$model]['id'] . "_" . $list[$model]['is_top_highlighted']; ?>">
                                                 </td>
                                                 <td><?php echo date(DATETIME_FORMAT, strtotime($list[$model]['created_on'])); ?></td>
                                                 <td style="text-align: center;">

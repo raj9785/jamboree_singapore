@@ -91,9 +91,9 @@
                                 <thead>
                                     <tr>
                                         <th class="hidden-xs" width="5%">S.No.</th>
-                                        <th class="hidden-xs" width="35%">Title </th>
+                                        <th class="hidden-xs" width="35%">Page </th>
                                         <th class="hidden-xs">Created On</th>
-                                        
+
                                         <th class="hidden-xs">Modified On</th>
                                         <th>Action</th>
                                     </tr>
@@ -110,7 +110,7 @@
                                                 <td> <?php echo date(DATE_FORMAT, strtotime($user['Page']['created'])); ?></td>
 
 
-                                               
+
 
                                                 <td> <?php echo date(DATE_FORMAT, strtotime($user['Page']['modified'])); ?></td>
 
@@ -124,10 +124,33 @@
                                                         <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
                                                             <li>
                                                                 <?php
-                                                                echo $this->Html->link('Edit', array('plugin' => false, 'controller' => 'pages', 'action' => 'edit', '?' => array('id' => $user['Page']['id'])), array('class' => '', 'tooltip-placement' => 'top', 'tooltip' => 'Edit', 'escape' => false));
+                                                                echo $this->Html->link('Edit Page', array('plugin' => false, 'controller' => 'pages', 'action' => 'edit', '?' => array('id' => $user['Page']['id'])), array('class' => '', 'tooltip-placement' => 'top', 'tooltip' => 'Edit', 'escape' => false));
                                                                 ?>							
                                                             </li>
 
+
+                                                            <?php
+                                                            if ($user['Page']['is_program_detail'] == 1) {
+                                                                ?>
+                                                                <li>
+                                                                    <?php
+                                                                    echo $this->Html->link("Program Details", array('plugin' => 'page_program_detail', 'controller' => 'page_program_details', 'action' => 'index', $user['Page']['id']), array('class' => '', 'tooltip-placement' => 'top', 'tooltip' => 'Edit', 'escape' => false));
+                                                                    ?>							
+                                                                </li>
+                                                            <?php } ?>
+
+
+
+                                                            <?php
+                                                            if ($user['Page']['has_sub_points'] == 1) {
+                                                                ?>
+
+                                                                <li>
+                                                                    <?php
+                                                                    echo $this->Html->link($user['Page']['sub_points_heading'], array('plugin' => false, 'controller' => 'pages', 'action' => 'manage_points', $user['Page']['id']), array('class' => '', 'tooltip-placement' => 'top', 'tooltip' => 'Edit', 'escape' => false));
+                                                                    ?>							
+                                                                </li>
+                                                            <?php } ?>
 
                                                         </ul>
                                                     </div>

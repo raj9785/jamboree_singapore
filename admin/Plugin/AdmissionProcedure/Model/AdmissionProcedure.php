@@ -1,0 +1,1 @@
+<?phpclass AdmissionProcedure extends AdmissionProcedureAppModel {    var $name = 'AdmissionProcedure';    var $actsAs = array('Search.Searchable');    public $validate = array();    public $belongsTo = array(        'DeadlineCategory' => array("fields" => array("name", "id")),            );}?>

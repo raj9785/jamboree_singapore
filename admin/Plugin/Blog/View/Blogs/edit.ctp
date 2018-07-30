@@ -70,7 +70,7 @@ echo $this->Html->script(array('edit_blog'));
 
 
                                 </div>
-                                
+
 
                             </div>
                             <div class="col-md-12 " > 
@@ -81,7 +81,7 @@ echo $this->Html->script(array('edit_blog'));
                                 <div class="col-md-6"> 
 
                                     <div class="form-group">
-                                        <label class="control-label">Blog Image <span class="symbol required"></span></label>
+                                        <label class="control-label">Blog Image </label>
 
 
 
@@ -103,7 +103,7 @@ echo $this->Html->script(array('edit_blog'));
                                 </div>
 
                             </div>
-                             <div class="col-md-12"> 
+                            <div class="col-md-12"> 
                                 <div class="col-md-6"> 
                                     <div class="form-group">
                                         <label class="control-label">Alt Tag </label>
@@ -155,7 +155,7 @@ echo $this->Html->script(array('edit_blog'));
 
                             </div>
 
-                            <div class="col-md-12" style="margin-top: 30px;">  
+<!--                            <div class="col-md-12" style="margin-top: 30px;">  
                                 <div class="col-md-12"> 
                                     <a href="javascript:void(0)" id="prv" style="font-size: 30px;">Preview</a>
 
@@ -166,7 +166,7 @@ echo $this->Html->script(array('edit_blog'));
 
 
                                 </div>
-                            </div>
+                            </div>-->
 
 
 
@@ -204,11 +204,7 @@ echo $this->Html->script(array('edit_blog'));
     <!-- end: FOOTER -->
 </div>
 <?php
-if (!empty($users_data['LeadCompany']) && isset($users_data['LeadCompany']['unique_id']) && $users_data['LeadCompany']['unique_id']) {
-    $unique_id = $users_data['LeadCompany']['unique_id'];
-} else {
-    $unique_id = "SUPERCABZ";
-}
+$unique_id = "jamboree";
 ?>
 <script type="text/javascript">
     // <![CDATA[
@@ -249,64 +245,3 @@ if (!empty($users_data['LeadCompany']) && isset($users_data['LeadCompany']['uniq
                                     });
 </script>
 
-<script type="text/javascript">
-<?php
-if (URL_DOMAIN == "live") {
-    echo $this->Html->script('https://maps.googleapis.com/maps/api/js?key=' . MAP_API_KEY . '&libraries=places', array('inline' => false));
-} else {
-    echo $this->Html->script('https://maps.googleapis.com/maps/api/js?libraries=places', array('inline' => false));
-}
-?>
-<?php echo $this->Html->script('geocomplete.js', array('inline' => false)); ?>
-
-    jQuery(document).ready(function () {
-
-
-<?php
-//$ct=count($users_data['BlogCity'])+1;
-?>
-        // count_tt = <?php //echo $ct;       ?>;
-        $("#to_city_name").geocomplete({
-            componentRestrictions: {country: 'IN',
-            }, types: ['(cities)']
-        }).bind("geocode:result", function (event, result) {
-
-//            var formatted_address = result.formatted_address;
-//            if (formatted_address) {
-//
-//                var address_comp = formatted_address.split(",");
-//                var address = address_comp[0];
-//                var addrs_exit = 0;
-//                $(".all_cities").each(function () {
-//                    if ($(this).val() == address) {
-//                        alert(address + " already added.");
-//                        $("#city_name").val(" ");
-//                        addrs_exit = 1;
-//                        return false;
-//                    }
-//                });
-//
-//                if (addrs_exit != 1) {
-//                    var list_html = " <span id='" + count_tt + "'>" + address + " <a class='remove_me' id='RM_" + count_tt + "' javascript='void(0)'><i class='fa fa-minus-circle' ></i></a>,<input type='hidden' class='all_cities' name='city[]' value='" + address + "'></span>";
-//                    $("#all_ct_name").append(list_html + " ");
-//                    $("#city_name").val(" ");
-//                    $("#city_name").attr("placeholder", "Type here to add more city");
-//                    count_tt++;
-//                }
-//            }
-
-
-            // $("#location_lat").val(result.geometry.location.lat());
-            //$("#location_long").val(result.geometry.location.lng());
-
-        });
-
-        $(document).on("click", ".remove_me", function () {
-            var this_id = $(this).attr("id");
-            var this_ids = this_id.split("_");
-            $("#" + this_ids[1]).remove();
-        });
-
-    });
-
-</script>

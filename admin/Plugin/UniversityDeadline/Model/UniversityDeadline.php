@@ -1,0 +1,1 @@
+<?phpclass UniversityDeadline extends UniversityDeadlineAppModel {    var $name = 'UniversityDeadline';    var $actsAs = array('Search.Searchable');    public $validate = array();    public $belongsTo = array(        'DeadlineCategory' => array("fields" => array("name", "id")),            );}?>

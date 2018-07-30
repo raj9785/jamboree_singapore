@@ -20,15 +20,15 @@ $(document).ready(function () {
             $("#question-error").html("");
         }
 
-        if ($.trim($("#answer").val()) == "") {
-            $("#answer-error").html("Please enter answer");
-            $("#answer").parent('div').addClass('has-error');
-            $("#answer").focus();
-            return false;
-        } else {
-            $("#answer").parent('div').removeClass('has-error');
-            $("#answer-error").html("");
-        }
+//        if ($.trim($("#answer").val()) == "") {
+//            $("#answer-error").html("Please enter answer");
+//            $("#answer").parent('div').addClass('has-error');
+//            $("#answer").focus();
+//            return false;
+//        } else {
+//            $("#answer").parent('div').removeClass('has-error');
+//            $("#answer-error").html("");
+//        }
     });
 
 });

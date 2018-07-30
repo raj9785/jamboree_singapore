@@ -1,0 +1,1 @@
+<?phpclass Resume extends ResumeAppModel {    var $name = 'Resume';    var $actsAs = array('Search.Searchable');    public $belongsTo = array(        'CareerCategory' => array("fields" => array("name", "id"))    );}?>

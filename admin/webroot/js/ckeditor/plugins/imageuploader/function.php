@@ -36,7 +36,7 @@ function loadImages() {
             
             
             $image_url = $site.$useruploadfolder."/".$image_basename;
-          
+            //echo $image_url;
            
             $size = getimagesize($image);
             $image_height = $size[0];

@@ -105,6 +105,7 @@ echo $this->Html->script(array('jquery-ui.min'));
 <?php
 echo $this->Html->script(array('add_event'));
 ?>
+
 <div id="app">
     <!-- sidebar -->
     <?php echo $this->element('sidebar'); ?>
@@ -277,3 +278,20 @@ echo $this->Html->script(array('add_event'));
     <?php echo $this->element('footer'); ?>
     <!-- end: FOOTER -->
 </div>
+<script src="//cdn.ckeditor.com/4.10.0/basic/ckeditor.js"></script>
+<script type="text/javascript">
+    // <![CDATA[
+    editor = CKEDITOR.replace('description',
+            {
+                //height: 300,
+                //width: 800,
+                //enterMode: CKEDITOR.ENTER_BR,
+
+              
+                                            });
+                                    //]]>	
+
+                                    
+                                    
+
+</script>

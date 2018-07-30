@@ -10,6 +10,13 @@ include_once '../include/config.php';
 \Slim\Slim::registerAutoloader();
 
 $app = new \Slim\Slim();
+$app->response()->headers->set('Access-Control-Allow-Origin', '*');
+$app->response()->headers->set('Access-Control-Allow-Headers', 'Accept, Content-Type, Origin');
+$app->response()->headers->set('Content-Type', 'application/json');
+$app->response()->headers->set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+
+
+
 
 // User id from db - Global Variable
 $user_id = NULL;
@@ -53,6 +60,7 @@ $app->get('/slider_scores', function() use ($app) {
         $response["code"] = NO_RECORD_FOUND;
         $response["error"] = true;
         $response["message"] = "No record available";
+        $response["data"] = array();
         echoRespnse(200, $response);
     } else {
         $response["code"] = SUCCESS;
@@ -77,6 +85,7 @@ $app->get('/slider_reviews', function() use ($app) {
         $response["code"] = NO_RECORD_FOUND;
         $response["error"] = true;
         $response["message"] = "No record available";
+        $response["data"] = array();
         echoRespnse(200, $response);
     } else {
         $response["code"] = SUCCESS;
@@ -94,14 +103,15 @@ $app->get('/slider_reviews', function() use ($app) {
  * params-course_id[0=>all,1=>gmat,2=>gre,3=>sat,4=>ielts,5=>toefl],schedule_type[0=>Both,1=>Classroom,2=>live online]
  * method - GET
  */
-$app->get('/batch_schedule_list(/:course_id)(/:schedule_type)', function($course_id = 0,$schedule_type=0) use ($app) {
+$app->get('/batch_schedule_list(/:course_id)(/:schedule_type)', function($course_id = 0, $schedule_type = 0) use ($app) {
     $response = array();
     $db = new DbHandler();
-    $res = $db->batch_schedule_list($course_id,$schedule_type);
+    $res = $db->batch_schedule_list($course_id, $schedule_type);
     if ($res == 'NO_RECORD_FOUND') {
         $response["code"] = NO_RECORD_FOUND;
         $response["error"] = true;
         $response["message"] = "No record available";
+        $response["data"] = array();
         echoRespnse(200, $response);
     } else {
         $response["code"] = SUCCESS;
@@ -126,6 +136,7 @@ $app->get('/home_event_list', function() use ($app) {
         $response["code"] = NO_RECORD_FOUND;
         $response["error"] = true;
         $response["message"] = "No record available";
+        $response["data"] = array();
         echoRespnse(200, $response);
     } else {
         $response["code"] = SUCCESS;
@@ -198,6 +209,7 @@ $app->get('/header_events', function() use ($app) {
         $response["code"] = NO_RECORD_FOUND;
         $response["error"] = true;
         $response["message"] = "No record available";
+        $response["data"] = array();
         echoRespnse(200, $response);
     } else {
         $response["code"] = SUCCESS;
@@ -238,16 +250,17 @@ $app->get('/associates', function() use ($app) {
 /**
  * All Resource Centre
  * url - /resource_centre_list
- * method - POST,
+ * method - GET,
  * param:{
   "page_no":1
   }
  */
-$app->post('/resource_centre_list', function() use ($app) {
+$app->get('/resource_centre_list', function() use ($app) {
     $response = array();
     $db = new DbHandler();
-    $post_data = $app->request->getBody();
-    $post_data = json_decode($post_data, true);
+//    $post_data = $app->request->getBody();
+//    $post_data = json_decode($post_data, true);
+    $post_data = $app->request->get();
     $page_no = @$post_data['page_no'] ? @$post_data['page_no'] : 1;
 
     $res = $db->resource_centre_list($page_no);
@@ -270,24 +283,26 @@ $app->post('/resource_centre_list', function() use ($app) {
 /**
  * Event List
  * url - /event_list
- * method - POST
+ * method - GET
  * params:{
   "page_no":1,
   "type":"upcoming"
   }
   type=>upcoming,recent
  */
-$app->post('/event_list', function() use ($app) {
+$app->get('/event_list', function() use ($app) {
     $response = array();
     $db = new DbHandler();
-    $post_data = $app->request->getBody();
-    $post_data = json_decode($post_data, true);
+    $post_data = $app->request->get();
+    //$post_data = json_decode($post_data, true);
     $page_no = @$post_data['page_no'] ? @$post_data['page_no'] : 1;
     $type = @$post_data['type'] ? @$post_data['type'] : 'upcoming';
-    $res = $db->event_list($page_no, $type);
+    $eventyear = @$post_data['eventyear'] ? @$post_data['eventyear'] : "";
+    $res = $db->event_list($page_no, $type, $eventyear);
     if ($res == 'NO_RECORD_FOUND') {
         $response["code"] = NO_RECORD_FOUND;
         $response["error"] = true;
+        $response["data"] = array();
         $response["message"] = "No record available";
         echoRespnse(200, $response);
     } else {
@@ -419,6 +434,547 @@ $app->get('/contact_info', function() use ($app) {
         $response["code"] = SUCCESS;
         $response["error"] = false;
         $response["message"] = "Contact Information";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+/**
+ * contact information
+ * url - /contact_info
+ * method - GET
+ */
+$app->get('/home_statistics', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->home_statistics();
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Home Statistics";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+/**
+ * Blog List
+ * url - /blog_list
+ * method - GET
+ * params:{
+  "page_no":1,
+  "search_text":"testing"
+  }
+ */
+$app->get('/blog_list', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $post_data = $app->request->get();
+    //$post_data = json_decode($post_data, true);
+    $page_no = @$post_data['page_no'] ? @$post_data['page_no'] : 1;
+    $search_text = @$post_data['search_text'] ? @$post_data['search_text'] : '';
+    $res = $db->blog_list($page_no, $search_text);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Blog List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+/**
+ * Blog detail
+ * url - /blog_detail
+ * params-slug
+ * method - GET
+ */
+$app->get('/blog_detail/:slug', function($slug) use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->blog_detail($slug);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Blog Detail";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+/**
+ * Career List
+ * url - /career_list
+ * method - GET
+ * params:{
+  "page_no":1,
+  }
+ */
+$app->get('/career_list', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $post_data = $app->request->get();
+    //$post_data = json_decode($post_data, true);
+    $page_no = @$post_data['page_no'] ? @$post_data['page_no'] : 1;
+    $res = $db->career_list($page_no);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["data"] = array();
+        $response["message"] = "No record available";
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Career List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+
+/**
+ * Score List
+ * url - /score_list
+ * method - POST
+ * params:{
+  "page_no":1,
+  "course_id":1 [1=>gmat,2=>gre,3=>sat,4=>ielts,5=>toefl],
+  "pass_year":2018 [YYYY],
+  }
+ */
+$app->post('/score_list11', function() use ($app) {
+    //echo "here";exit;
+    $response = array();
+    $db = new DbHandler();
+    $post_data = $app->request->getBody();
+    $post_data = json_decode($post_data, true);
+    $page_no = @$post_data['page_no'] ? @$post_data['page_no'] : 1;
+    $course_id = @$post_data['course_id'] ? @$post_data['course_id'] : 1;
+    $pass_year = @$post_data['pass_year'] ? @$post_data['pass_year'] : "";
+
+    $res = $db->score_list($page_no, $course_id, $pass_year);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Score List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+$app->get('/score_list', function() use ($app) {
+    //echo "here";exit;
+    $response = array();
+    $db = new DbHandler();
+    $post_data = $app->request->get();
+    //print_r($app->request->get()); exit;
+    //$post_data = json_decode($post_data, true);
+    $page_no = @$post_data['page_no'] ? @$post_data['page_no'] : 1;
+    $course_id = @$post_data['course_id'] ? @$post_data['course_id'] : 1;
+    $pass_year = @$post_data['pass_year'] ? @$post_data['pass_year'] : "";
+
+    $res = $db->score_list($page_no, $course_id, $pass_year);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        $return['list'] = array();
+        $return['page'] = 1;
+        $return['next_page'] = 0;
+        $return['total'] = 0;
+        $response["data"] = $return;
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Score List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+/**
+ * Counselling Results List
+ * url - /admission_counselling_list
+ * method - GET
+ * params:{
+  "page_no":1,
+  "course_id":1 [1=>MBA,2=>MS & PHD,3=>Undergrad],
+  "pass_year":2018 [YYYY],
+  }
+ */
+$app->get('/admission_counselling_list', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $post_data = $app->request->get();
+    //$post_data = json_decode($post_data, true);
+    $page_no = @$post_data['page_no'] ? @$post_data['page_no'] : 1;
+    $course_id = @$post_data['course_id'] ? @$post_data['course_id'] : 1;
+    $pass_year = @$post_data['pass_year'] ? @$post_data['pass_year'] : "";
+
+    $res = $db->admission_counselling_list($page_no, $course_id, $pass_year);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $return['list'] = array();
+        $return['page'] = 1;
+        $return['next_page'] = 0;
+        $return['total'] = 0;
+        $response["data"] =$return;
+        $response["message"] = "No record available";
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Admission Counselling List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+
+/**
+ * Review List
+ * url - /review_list
+ * method - GET
+ * params:{
+  "page_no":1,
+  "course_id":1 [1=>gmat,2=>gre,3=>sat,4=>ielts,5=>toefl,6=>Admission],
+  }
+ */
+$app->get('/review_list', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $post_data = $app->request->get();
+    //$post_data = json_decode($post_data, true);
+    $page_no = @$post_data['page_no'] ? @$post_data['page_no'] : 1;
+    $course_id = @$post_data['course_id'] ? @$post_data['course_id'] : 1;
+    $res = $db->review_list($page_no, $course_id);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $return['videos'] = array();
+        $return['list'] = array();
+        $return['page'] = 1;
+        $return['next_page'] = 0;
+        $return['total'] = 0;
+        $response["data"] = $return;
+        $response["message"] = "No record available";
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Review List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+/**
+ * Page
+ * url - /page
+ * params-slug
+ * method - GET
+ */
+$app->get('/page/:slug', function($slug) use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->page($slug);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        $response["data"] = array();
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Page Data";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+/**
+ * Preparation Video List
+ * url - /videos_list
+ * method - GET
+ * params:{
+  "page_no":1,
+  "course_id":1 [1=>gmat,2=>gre,3=>sat,4=>ielts,5=>toefl,6=>Admission],
+  }
+ */
+$app->get('/videos_list', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $post_data = $app->request->get();
+    //$post_data = json_decode($post_data, true);
+    $page_no = @$post_data['page_no'] ? @$post_data['page_no'] : 1;
+    $course_id = @$post_data['course_id'] ? @$post_data['course_id'] : 1;
+    $res = $db->videos_list($page_no, $course_id);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Video List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+
+
+/**
+ * Resource center category list
+ * url - /get_resource_cat_list
+ * method - GET
+ */
+$app->get('/get_resource_cat_list', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->get_resource_cat_list();
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        $response["data"] = array();
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Course List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+/**
+ * Student Downloads
+ * url - /student_downloads
+ * params-course_cat_id[0,=>all,1=>GMAT-MBA,2=>GRE-MS/PHD,3=>SAT-UNDERGRAD]
+ * method - GET
+ */
+$app->get('/student_downloads(/:course_cat_id)', function($course_cat_id = '') use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->student_downloads($course_cat_id);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        $response["data"] = array();
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Download List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+
+
+/**
+ * Admissions Procedures
+ * url - /admissions_procedures
+ * params-course_cat_id[1=>GMAT-MBA,2=>GRE-MS/PHD,3=>SAT-UNDERGRAD]
+ * method - GET
+ */
+$app->get('/admissions_procedures(/:course_cat_id)', function($course_cat_id = '') use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->admissions_procedures($course_cat_id);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        $response["data"] = array();
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Admissions Procedure";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+/**
+ * University deadlines
+ * url - /university_deadlines
+ * params-course_cat_id[1=>GMAT-MBA,2=>GRE-MS/PHD,3=>SAT-UNDERGRAD]
+ * method - GET
+ */
+$app->get('/university_deadlines(/:course_cat_id)', function($course_cat_id = '') use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->university_deadlines($course_cat_id);
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        $response["data"] = array();
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "University deadline";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+/**
+ * Recent Blog List
+ * url - /recent_blog_list
+ * method - GET
+
+ */
+$app->get('/recent_blog_list', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->recent_blog_list();
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Recent Post List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+
+
+/**
+ * Career funtional_area list
+ * url - /career_functional_areas
+ * method - GET
+ */
+$app->get('/career_functional_areas', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->career_functional_areas();
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        $response["data"] = array();
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Career Functional Area List";
+        $response["data"] = $res;
+        echoRespnse(200, $response);
+    }
+});
+
+/**
+ * Post Resume
+ * url - /post_resume
+ * method - POST
+ * params - mobile(mandatory),otp(required)
+ * Created By- Rajesh Kumar->8130023094
+ */
+$app->post('/post_resume', function() use ($app) {
+    global $config;
+    verifyRequiredParams(array('name', 'email', 'mobile', 'ctc', 'career_category_id', 'location'));
+    $name = $app->request()->post('name');
+    $email = $app->request()->post('email');
+    $mobile = $app->request()->post('mobile');
+    $ctc = $app->request()->post('ctc');
+    $career_category_id = $app->request()->post('career_category_id');
+    $location = $app->request()->post('location');
+
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->post_resume($name, $email, $mobile, $ctc, $career_category_id, $location);
+
+    if ($res == 'ERROR') {
+        $response["code"] = ERROR;
+        $response["error"] = true;
+        $response["message"] = "Some Error Occurred";
+        $response["data"] = "";
+        echoRespnse(201, $response);
+    } else if ($res == 'NO_FILE') {
+        $response["code"] = NO_FILE;
+        $response["error"] = true;
+        $response["message"] = "Please select resume";
+        $response["data"] = "";
+        echoRespnse(201, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Resume Sent Successfully.";
+        $response["data"] = "";
+        echoRespnse(200, $response);
+    }
+});
+
+
+/**
+ * webinars
+ * url - /webinars
+ * method - GET
+ */
+$app->get('/webinars', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+    $res = $db->webinars();
+    if ($res == 'NO_RECORD_FOUND') {
+        $response["code"] = NO_RECORD_FOUND;
+        $response["error"] = true;
+        $response["message"] = "No record available";
+        $response["data"] = array();
+        echoRespnse(200, $response);
+    } else {
+        $response["code"] = SUCCESS;
+        $response["error"] = false;
+        $response["message"] = "Webinar";
         $response["data"] = $res;
         echoRespnse(200, $response);
     }

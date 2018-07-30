@@ -32,7 +32,7 @@ echo $this->Html->script(array('jquery-ui.min'));
 
 </script>
 
-
+<script src="//cdn.ckeditor.com/4.10.0/basic/ckeditor.js"></script>
 <?php
 echo $this->Html->script(array('add_event'));
 ?>
@@ -182,5 +182,20 @@ echo $this->Html->script(array('add_event'));
     <?php echo $this->element('footer'); ?>
     <!-- end: FOOTER -->
 </div>
+<script type="text/javascript">
+    // <![CDATA[
+    editor = CKEDITOR.replace('description',
+            {
+                //height: 300,
+                //width: 800,
+                //enterMode: CKEDITOR.ENTER_BR,
 
+              
+                                            });
+                                    //]]>	
+
+                                    
+                                    
+
+</script>
 

@@ -162,9 +162,9 @@ $usersiteroot = substr($_SERVER["SCRIPT_FILENAME"], 0, (stripos($_SERVER["SCRIPT
 $useruploadfolder = $unique_id . "/";
 
 //live 
-$sub_url = "";
-$usersiteroot = "/var/www/html/supercabz.com/app/webroot/albums/";
-$useruploadpath = "/var/www/html/supercabz.com/app/webroot/albums/" . $useruploadfolder;
+$sub_url = "jamboree/";
+$usersiteroot = "/home/mejalewmrc1e/public_html/jamboree/app/webroot/albums/";
+$useruploadpath = "/home/mejalewmrc1e/public_html/jamboree/app/webroot/albums/" . $useruploadfolder;
 
 //live beta
 //$sub_url = "";
